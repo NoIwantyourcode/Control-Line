@@ -108,6 +108,14 @@ a {
 .hero-cta {
     align-self: flex-start;
     margin-top: 140px;
+    display: flex;
+    gap: 40px;
+}
+
+.hero-cta__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .hero-cta__label {
@@ -205,6 +213,17 @@ a {
     margin: 0;
     font-size: 24px;
     line-height: 1.5;
+}
+
+.incentive {
+    padding: 0 64px 140px;
+    text-align: center;
+}
+
+.incentive p {
+    font-size: 77px;
+    margin: 0;
+    font-weight: 700;
 }
 
 @media (max-width: 1120px) {
