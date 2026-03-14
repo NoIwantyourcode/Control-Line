@@ -207,6 +207,17 @@ a {
     line-height: 1.5;
 }
 
+.incentive {
+    padding: 0 64px 140px;
+    text-align: center;
+}
+
+.incentive p {
+    font-size: 77px;
+    margin: 0;
+    font-weight: 700;
+}
+
 @media (max-width: 1120px) {
     .hero {
         flex-direction: column;
