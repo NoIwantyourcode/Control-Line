@@ -147,7 +147,7 @@ a {
 }
 
 .hero-headline {
-    max-width: 540px;
+    width: 540px;
 }
 
 .hero-headline h2 {
@@ -159,16 +159,17 @@ a {
 .hero-headline p {
     font-size: 24px;
     margin: 24px 0 0;
-    max-width: 420px;
+    max-width: 540px;
     line-height: 1.4;
     opacity: 0.95;
 }
 
 .hero-cta {
     align-self: flex-start;
-    margin-top: 140px;
+    margin-top: 5px;
     display: flex;
     gap: 40px;
+    flex-direction: column;
 }
 
 .hero-cta__item {
@@ -179,7 +180,7 @@ a {
 }
 
 .hero-cta__label {
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 700;
 }
 
@@ -189,11 +190,23 @@ a {
     background: rgba(255, 255, 255, 0.95);
     color: var(--black);
     font-weight: 700;
-    font-size: 28px;
+    font-size: 40px;
     border-radius: 16px;
     box-shadow: 0 16px 30px rgba(0, 0, 0, 0.22);
+    flex-direction: column;
+    transform: translateX(50px);
 }
 
+.hero-cta__button2 {
+    padding: 18px 44px;
+    background: rgba(255, 255, 255, 0.95);
+    color: var(--black);
+    font-weight: 700;
+    font-size: 40px;
+    border-radius: 16px;
+    box-shadow: 0 16px 30px rgba(0, 0, 0, 0.22);
+    flex-direction: column;
+}
 
 .section-title {
     font-size: 77px;
