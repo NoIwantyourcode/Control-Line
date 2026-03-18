@@ -278,7 +278,6 @@ a {
     object-fit: contain;
     transform: scaleX(-1) translateY(-30px);
     filter: drop-shadow(0 30px 60px rgba(0, 0, 0, 0.4)) drop-shadow(0 0 40px rgba(26, 140, 216, 0.3));
-    animation: float 6s ease-in-out infinite;
 }
 
 @keyframes float {
