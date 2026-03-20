@@ -5,17 +5,17 @@
     <title>Hack Club ThrottleUp</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        html { 
-            scroll-behavior: smooth; 
-        }
+        html { scroll-behavior: smooth; }
     </style>
 </head>
 <body>
     <header class="site-header">
         <div class="brand">
             <h1 class="brand-title">
-                <img class="brand-icon" src="https://assets.hackclub.com/flag-standalone.svg" width="100" height="auto" alt="hackclub logo" href="https://hackclub.com">
-                <img class="brand-icon" src="images/rc-plane.png" width="100" height="auto" alt="logo">
+                <span class="brand-icons">
+                    <img class="brand-icon" src="https://assets.hackclub.com/flag-standalone.svg" width="80" height="auto" alt="hackclub logo">
+                    <img class="brand-icon" src="images/rc-plane.png" width="80" height="auto" alt="logo">
+                </span>
                 ThrottleUp
             </h1>
         </div>
@@ -26,14 +26,23 @@
             <a href="#faq">Flight Manual</a>
         </nav>
     </header>
+
     <main class="page" id="signup">
         <section class="hero">
+            <!-- LEFT: headline + CTA panel -->
             <div class="hero-content">
                 <div class="hero-headline">
-                    <h2>Welcome to ThrottleUp</h2> 
+                    <h2>Welcome to ThrottleUp</h2>
                     <p>Build, fly, and log your RC aircraft from ground to sky — every flight counts.</p>
                 </div>
                 <div class="hero-cta">
+                    <div class="hero-cta__item">
+                        <div class="hero-cta__label">RSVP Here!:</div>
+                        <div class="rsvp-inline">
+                            <input type="email" id="rsvp-email" placeholder="you@example.com">
+                            <button class="hero-cta__button" onclick="goToForm()">RSVP!</button>
+                        </div>
+                    </div>
                     <div class="hero-cta__item">
                         <div class="hero-cta__label">Submit Here:</div>
                         <a class="hero-cta__button2" href="https://forms.fillout.com/t/n47LH3XGj4us">Submit!</a>
@@ -48,13 +57,14 @@
                     </div>
                 </div>
             </div>
-                <div class="hero-plane-content">
-                    <div class="hero-plane-wrapper">
-                        <img src="images/complete-brg removed.png" alt="RC Aircraft" class="hero-plane">
-                    </div>
-                    <div class="hero-plane-text">
-                        <p><strong>Want to make RC Aircraft like this (or better)? Why not join ThrottleUp!</strong></p>
-                    </div>
+
+            <!-- RIGHT: plane image -->
+            <div class="hero-plane-content">
+                <div class="hero-plane-wrapper">
+                    <img src="images/complete-brg removed.png" alt="RC Aircraft" class="hero-plane">
+                </div>
+                <div class="hero-plane-text">
+                    <p><strong>Want to make RC Aircraft like this (or better)? Why not join ThrottleUp!</strong></p>
                 </div>
             </div>
         </section>
@@ -63,8 +73,8 @@
             <h2 class="section-title">About Hack Club</h2>
             <div class="about">
                 <p>
-                    Hack Club is a 501(c)(3) nonprofit and network of 60k+ technical high schoolers. 
-                    We believe you learn best by building so we're creating community and providing grants so you can make awesome projects. 
+                    Hack Club is a 501(c)(3) nonprofit and network of 60k+ technical high schoolers.
+                    We believe you learn best by building so we're creating community and providing grants so you can make awesome projects.
                     We run programs like these year around. You can get more information about us <u><a href="https://hackclub.com/">here</a></u>
                 </p>
             </div>
@@ -74,54 +84,42 @@
             <h2 class="section-title">Flight Plan</h2>
             <div class="steps">
                 <article class="step">
-                    <div class="step-media">
-                        <img src="images/design.jpeg" alt="Design an aircraft" loading="lazy">
-                    </div>
+                    <div class="step-media"><img src="images/design.jpeg" alt="Design an aircraft" loading="lazy"></div>
                     <div class="step-content">
                         <h3>Step 1</h3>
                         <p>Design the RC aircraft! Remember to <strong>Journal Everything with hour counts in your GitHub Repo</strong>, make a file named <strong>Journal.md.</strong></p>
                     </div>
                 </article>
                 <article class="step">
-                    <div class="step-media">
-                        <img src="images/submit.jpeg" alt="Submit the design" loading="lazy">
-                    </div>
+                    <div class="step-media"><img src="images/submit.jpeg" alt="Submit the design" loading="lazy"></div>
                     <div class="step-content">
                         <h3>Step 2</h3>
-                        <p>Submit the design through the form linked above and select <strong>Design Review.</strong>.</p>
+                        <p>Submit the design through the form linked above and select <strong>Design Review.</strong></p>
                     </div>
                 </article>
                 <article class="step">
-                    <div class="step-media">
-                        <img src="images/buy.jpeg" alt="Order parts" loading="lazy">
-                    </div>
+                    <div class="step-media"><img src="images/buy.jpeg" alt="Order parts" loading="lazy"></div>
                     <div class="step-content">
                         <h3>Step 3</h3>
                         <p>Order parts for the aircraft (we will reimburse you upto [To be determined] per hour you spend designing).</p>
                     </div>
                 </article>
                 <article class="step">
-                    <div class="step-media">
-                        <img src="images/build.jpeg" alt="Build the aircraft" loading="lazy">
-                    </div>
+                    <div class="step-media"><img src="images/build.jpeg" alt="Build the aircraft" loading="lazy"></div>
                     <div class="step-content">
                         <h3>Step 4</h3>
-                        <p>Build the aircraft. (remember to track your time through lapse, it will used to give out flight wings).</p>
+                        <p>Build the aircraft. (remember to track your time through lapse, it will be used to give out flight wings).</p>
                     </div>
                 </article>
                 <article class="step">
-                    <div class="step-media">
-                        <img src="images/complete.jpeg" alt="Ship the aircraft" loading="lazy">
-                    </div>
+                    <div class="step-media"><img src="images/complete.jpeg" alt="Ship the aircraft" loading="lazy"></div>
                     <div class="step-content">
                         <h3>Step 5</h3>
                         <p>Ship the RC aircraft (you get flight wings for building it!) (select <strong>Build Review</strong> in the form).</p>
                     </div>
                 </article>
                 <article class="step">
-                    <div class="step-media">
-                        <img src="images/rewards.jpg" alt="Claim rewards" loading="lazy">
-                    </div>
+                    <div class="step-media"><img src="images/rewards.jpg" alt="Claim rewards" loading="lazy"></div>
                     <div class="step-content">
                         <h3>Step 6</h3>
                         <p>Claim your rewards by filling out the rewards form!</p>
@@ -137,85 +135,62 @@
         <section id="faq" class="faq">
             <h2 class="section-title">FAQ's</h2>
             <div class="faq-grid">
-                <div class="faq-card">
-                    <h3>Is this all for free?</h3>
-                    <p>All of this is completely free to participate in however we may not completely cover the price of the aircraft! We will still try to provide partial or full grants for you to build your aircraft.</p>
-                </div>
-                <div class="faq-card">
-                    <h3>Do I have to CAD model?</h3>
-                    <p>Yes — it is an important skill for all designers and engineers alike.</p>
-                </div>
-                <div class="faq-card">
-                    <h3>What kind of aircraft can I build?</h3>
-                    <p>You can build any kind of aircraft your heart desires — it just has to fly!</p>
-                </div>
-                <div class="faq-card">
-                    <h3>When does this event end?</h3>
-                    <p>There is no confirmed start or end date yet, but we hope to launch soon.</p>
-                </div>
-                <div class="faq-card">
-                    <h3>Where can I ask for help?</h3>
-                    <p>If you need help while designing or building your aircraft, ask in the appropriate Slack channel (To be determined).</p>
-                </div>
-                <div class="faq-card">
-                    <h3>How old do I have to be to participate?</h3>
-                    <p>You need to be between the ages of 13-18 inclusive!</p>
-                </div>
-                <div class="faq-card">
-                    <h3>Can hackatime banned individuals participate?</h3>
-                    <p>To be determined</p>
-                </div>
-                <div class="faq-card">
-                    <h3>Do I have to journal?</h3>
-                    <p>Yes! Everyone must journal their RC aircraft within their GitHub repo, please do so.</p>
-                </div>
-                <div class="faq-card">
-                    <h3>Is this program beginner friendly?</h3>
-                    <p>This program is designed for the beginner! We don't judge you based on how good-looking or how well flying your design is, As long as your design flies you should be able to submit it for prizes!</p>
-                </div>
-                <div class="faq-card">
-                    <h3>Where can I find guides on how to design/build RC aircraft?</h3>
-                    <p>Youtube channels such as Flitetest and Tail Heavy Productions offer a bunch of knowledge on how to design, make and fly your RC aircraft.</p>
-                </div>
-                <div class="faq-card">
-                    <h3>How many wings can I get per hour of work?</h3>
-                    <p>The current rate is [To be determined] per hour you spend <strong>building</strong> your aircraft.</p>
-                </div>
-                <div class="faq-card">
-                    <h3>What do I need in order to submit my repo?</h3>
-                    <p>To be determined</p>
-                </div>
+                <div class="faq-card"><h3>Is this all for free?</h3><p>All of this is completely free to participate in however we may not completely cover the price of the aircraft! We will still try to provide partial or full grants for you to build your aircraft.</p></div>
+                <div class="faq-card"><h3>Do I have to CAD model?</h3><p>Yes — it is an important skill for all designers and engineers alike.</p></div>
+                <div class="faq-card"><h3>What kind of aircraft can I build?</h3><p>You can build any kind of aircraft your heart desires — it just has to fly!</p></div>
+                <div class="faq-card"><h3>When does this event end?</h3><p>There is no confirmed start or end date yet, but we hope to launch soon.</p></div>
+                <div class="faq-card"><h3>Where can I ask for help?</h3><p>If you need help while designing or building your aircraft, ask in the appropriate Slack channel (To be determined).</p></div>
+                <div class="faq-card"><h3>How old do I have to be to participate?</h3><p>You need to be between the ages of 13-18 inclusive!</p></div>
+                <div class="faq-card"><h3>Can hackatime banned individuals participate?</h3><p>To be determined</p></div>
+                <div class="faq-card"><h3>Do I have to journal?</h3><p>Yes! Everyone must journal their RC aircraft within their GitHub repo, please do so.</p></div>
+                <div class="faq-card"><h3>Is this program beginner friendly?</h3><p>This program is designed for the beginner! We don't judge you based on how good-looking or how well flying your design is, as long as your design flies you should be able to submit it for prizes!</p></div>
+                <div class="faq-card"><h3>Where can I find guides on how to design/build RC aircraft?</h3><p>Youtube channels such as Flitetest and Tail Heavy Productions offer a bunch of knowledge on how to design, make and fly your RC aircraft.</p></div>
+                <div class="faq-card"><h3>How many wings can I get per hour of work?</h3><p>The current rate is [To be determined] per hour you spend <strong>building</strong> your aircraft.</p></div>
+                <div class="faq-card"><h3>What do I need in order to submit my repo?</h3><p>To be determined</p></div>
             </div>
         </section>
-<footer class="site-footer">
-    <div class="footer-inner">
-        <div class="footer-brand">
-            <h2>A project by Hack Club</h2> <img src="https://assets.hackclub.com/flag-standalone.svg" width="110">
-            <p>Hack Club is a 501(c)(3) nonprofit and network of 60k+ technical high schoolers. We believe you learn best by building so we're creating community and providing grants so you can make awesome projects.</p>
-            <p class="footer-tagline">At Hack Club, students aren't just learning, they're shipping.</p>
-        </div>
-        <div class="footer-col">
-            <h3>ThrottleUp</h3>
-            <ul>
-                <li><a href="#signup">Flight Log</a></li>
-                <li><a href="#plan">Flight Plan</a></li>
-                <li><a href="#faq">Flight Manual</a></li>
-                <li><a href="https://forms.fillout.com/t/n47LH3XGj4us">Submit</a></li>
-                <li><a href="https://forms.fillout.com/t/hyD21XZ181us">Rewards</a></li>
-            </ul>
-        </div>
-        <div class="footer-col">
-            <h3>Hack Club</h3>
-            <ul>
-                <li><a href="https://hackclub.com" target="_blank" rel="noopener">About Hack Club</a></li>
-                <li><a href="https://hackclub.com/philosophy" target="_blank" rel="noopener">Philosophy</a></li>
-                <li><a href="https://hackclub.com/team" target="_blank" rel="noopener">Our Team</a></li>
-                <li><a href="https://hackclub.com/donate" target="_blank" rel="noopener">Donate</a></li>
-            </ul>
-        </div>
-    </div>
-    </div>
-</footer>
     </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <h2>A project by Hack Club</h2>
+                <img src="https://assets.hackclub.com/flag-standalone.svg" width="110">
+                <p>Hack Club is a 501(c)(3) nonprofit and network of 60k+ technical high schoolers. We believe you learn best by building so we're creating community and providing grants so you can make awesome projects.</p>
+                <p class="footer-tagline">At Hack Club, students aren't just learning, they're shipping.</p>
+            </div>
+            <div class="footer-col">
+                <h3>ThrottleUp</h3>
+                <ul>
+                    <li><a href="#signup">Flight Log</a></li>
+                    <li><a href="#plan">Flight Plan</a></li>
+                    <li><a href="#faq">Flight Manual</a></li>
+                    <li><a href="https://forms.fillout.com/t/n47LH3XGj4us">Submit</a></li>
+                    <li><a href="https://forms.fillout.com/t/hyD21XZ181us">Rewards</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Hack Club</h3>
+                <ul>
+                    <li><a href="https://hackclub.com" target="_blank" rel="noopener">About Hack Club</a></li>
+                    <li><a href="https://hackclub.com/philosophy" target="_blank" rel="noopener">Philosophy</a></li>
+                    <li><a href="https://hackclub.com/team" target="_blank" rel="noopener">Our Team</a></li>
+                    <li><a href="https://hackclub.com/donate" target="_blank" rel="noopener">Donate</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function goToForm() {
+            const email = document.getElementById('rsvp-email').value.trim();
+            if (!email) return;
+            const base = 'https://forms.fillout.com/t/5QV1u2eqkTus';
+            window.open(`${base}?email=${encodeURIComponent(email)}`, '_blank');
+        }
+        document.getElementById('rsvp-email').addEventListener('keydown', function(e) {
+            if (e.key === 'Enter') goToForm();
+        });
+    </script>
 </body>
 </html>
