@@ -13,3 +13,7 @@ I don't know yet, maybe in the summer
 # Where can I find more information?
 
 Look at the website @ controlline.dino.icu or ask in #throttleup if your in Hack Club Slack
+
+# for the Reviewers
+
+I changed the name to throttleup after I submitted my website/url on the form hence why it is called control line! I will work on setting a permanant redirect soon
